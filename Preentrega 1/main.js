@@ -49,7 +49,7 @@ function subtotal(carrito, cantidad) {
 
 
 function PagoContadoTransferencia(total) {
-    console.log("CBU : 23523465324234 \n" + "ALIAS : PEPE.PIEDRA.TRUENO \n" + "Total: $" + total)
+    console.log("CBU : 0000007900204437260482 \n" + "ALIAS : PEPE.PIEDRA.TRUENO \n" + "Total: $" + total)
 }
 
 
@@ -82,7 +82,7 @@ for (let i = 0; i < Number.MAX_SAFE_INTEGER; i++) {
             let formaPago = prompt("Seleccione forma de pago : \n 1 - Transferencia \n 2 - Tarjeta (+10%)")
             console.log(compraFinal);
             if (formaPago == 1) {
-                console.log(PagoContadoTransferencia(total))
+                PagoContadoTransferencia(total);
                 break
             } else if (formaPago == 2) {
                 console.log(`Total con tarjeta: $${pagoTarjeta(total)}`)
@@ -103,3 +103,5 @@ for (let i = 0; i < Number.MAX_SAFE_INTEGER; i++) {
         total += subTotalCompra;
     }
 }
+
+
