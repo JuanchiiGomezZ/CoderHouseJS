@@ -37,6 +37,8 @@ sendBtn.onclick = (e) => {
     inputTelefono.value
   );
   productos.push(NuevoProducto);
+
+ /*  limpiarTabla(); */
   agregarProductosTabla();
   formulario.reset();
 };
