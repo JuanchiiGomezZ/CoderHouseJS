@@ -37,9 +37,7 @@ sendBtn.onclick = (e) => {
     inputTelefono.value
   );
   productos.push(NuevoProducto);
-
   agregarProductosTabla();
-  
   formulario.reset();
 };
 
@@ -59,9 +57,9 @@ function agregarProductosTabla() {
   });
 }
 
+
 function limpiarTabla(){
     while(tabla.rows.length > 1){
         tabla.deleteRow(1)
     }
 }
-  limpiarTabla()
