@@ -25,6 +25,7 @@ function inicializarElementosd() {
   inputTelefono = document.getElementById("telefono");
   formulario = document.getElementById("formulario");
   sendBtn = document.getElementById("sendBtn");
+  tabla = document.getElementById("tablaProductos");
 }
 inicializarElementosd();
 
@@ -36,9 +37,9 @@ sendBtn.onclick = (e) => {
     inputPuesto.value,
     inputTelefono.value
   );
+  
   productos.push(NuevoProducto);
-
- /*  limpiarTabla(); */
+  limpiarTabla();
   agregarProductosTabla();
   formulario.reset();
 };
@@ -60,8 +61,8 @@ function agregarProductosTabla() {
 }
 
 
-function limpiarTabla(){
-    while(tabla.rows.length > 1){
-        tabla.deleteRow(1)
-    }
+function limpiarTabla() {
+  while (tabla.rows.length > 1) {
+      tabla.deleteRow(1);
+  }
 }
